@@ -3,7 +3,6 @@ import pygame
 import time
 import random
 
-#citation list (note that this is not a key:value system)
 citations = [
     "1: Vi, A. (2017). Pixel happy Halloween pumpkin stock illustrations. iStock. https://www.istockphoto.com/illustrations/pixel-happy-halloween-pumpkin",
     "2: X, A. (2018). Black silhouettes of grass. floral background. wild grass. grass borders silhouette. vector illustration stock vector. Adobe Stock. https://stock.adobe.com/images/Black-silhouettes-of-grass.-Floral-background.-Wild-grass.-Grass-borders-silhoue/558648725?as_campaign=TinEye&as_content=tineye_match",

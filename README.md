@@ -1,5 +1,3 @@
-Play this fun Halloween orientated game!
-
 ## Installation
 1. Clone the repository: git clone https://github.com/BekzodDjumanov/comp-sci-project.git
 2. Nav to PD: cd comp-sci-project

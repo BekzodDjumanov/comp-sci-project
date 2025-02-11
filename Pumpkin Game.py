@@ -23,36 +23,35 @@ for citation in citations:
     document.write(citation + "\n")
     document.write("\n")
 
-print("Citations have been successfully written into citations.txt!")
+print("Citations have been successfully written into citations.txt!") #validates command
 
 document.close() #closes document
 
 
 class Background:
     def __init__(self):
-        self.backdrop = pygame.image.load("backgroundtest.jpg")
+        self.backdrop = pygame.image.load("assets/backgroundtest.jpg")
         self.backdrop = pygame.transform.scale(self.backdrop, (980, 570))
-        
         self.grass = pygame.image.load("grass.png")
         self.grass = pygame.transform.scale(self.grass, (1100, 150))
         self.grass_x1 = 0  
         self.grass_x2 = 980   
         self.grassSpeed = 2
         
-        self.dirt = pygame.image.load("bar.png")
+        self.dirt = pygame.image.load("assets/bar.png")
         self.dirt = pygame.transform.scale(self.dirt, (1100, 50))
 
-        self.endGame = pygame.image.load("HalloImg.png")
+        self.endGame = pygame.image.load("assets/HalloImg.png")
         self.endGame = pygame.transform.scale(self.endGame, (980, 570))
 
-        self.moon = pygame.image.load("moonImage.png")
+        self.moon = pygame.image.load("assets/moonImage.png")
         self.moon = pygame.transform.scale(self.moon, (200,200))
         
-        self.cloud1 = pygame.image.load("cloud2.png")
+        self.cloud1 = pygame.image.load("assets/cloud2.png")
         self.cloud1 = pygame.transform.scale(self.cloud1, (200, 100))
-        self.cloud2 = pygame.image.load("cloud2.png")
+        self.cloud2 = pygame.image.load("assets/cloud2.png")
         self.cloud2 = pygame.transform.scale(self.cloud2, (200, 100))
-        self.cloud3 = pygame.image.load("cloud2.png")
+        self.cloud3 = pygame.image.load("assets/cloud2.png")
         self.cloud3 = pygame.transform.scale(self.cloud3, (200, 100))
         
         self.cloud1_x = 100
@@ -124,7 +123,7 @@ class Background:
 class Player(pygame.sprite.Sprite):
     def __init__(self):
         super().__init__()
-        player_image = pygame.image.load("pumpkin_man.png")
+        player_image = pygame.image.load("assets/pumpkin_man.png")
         player_image = pygame.transform.scale(player_image, (100,100))
         self.alive = True
 

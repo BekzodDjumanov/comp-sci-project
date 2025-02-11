@@ -1,4 +1,3 @@
-# Let's make a game gentleman...
 import pygame
 import time
 import random

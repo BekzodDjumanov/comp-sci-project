@@ -32,7 +32,7 @@ class Background:
     def __init__(self):
         self.backdrop = pygame.image.load("assets/backgroundtest.jpg")
         self.backdrop = pygame.transform.scale(self.backdrop, (980, 570))
-        self.grass = pygame.image.load("grass.png")
+        self.grass = pygame.image.load("assets/grass.png")
         self.grass = pygame.transform.scale(self.grass, (1100, 150))
         self.grass_x1 = 0  
         self.grass_x2 = 980   
@@ -231,7 +231,7 @@ class Player(pygame.sprite.Sprite):
 class Enemy(pygame.sprite.Sprite):
     def __init__(self,x):
         super().__init__() # currently there is only a witch enemy. More enemies are able to be added just like in the obstacle class
-        enemy_image = pygame.image.load("witch.png")
+        enemy_image = pygame.image.load("assets/witch.png")
         enemy_image = pygame.transform.scale(enemy_image, (100,100))
 
         self.image = enemy_image
@@ -255,19 +255,19 @@ class Obstacle(pygame.sprite.Sprite):
         self.type = type
         
         if type == 'spike': # checks for obstacle type
-            spike_image = pygame.image.load("spike.png")
+            spike_image = pygame.image.load("assets/spike.png")
             spike_image = pygame.transform.scale(spike_image, (50,50))
             self.image = spike_image # converting spike_image to the reference of self
             self.rect = self.image.get_rect(midbottom = (x,random.randint(-1200,-300)))
             self.rect = self.rect.inflate(-20,0) # changing hitboxes for spike
         elif type == 'spike2':
-            spike2_image = pygame.image.load("spike2.png")
+            spike2_image = pygame.image.load("assets/spike2.png")
             spike2_image = pygame.transform.scale(spike2_image, (50,50))
             self.image = spike2_image # converting spike2_image to the reference of self
             self.rect = self.image.get_rect(midbottom = (x,random.randint(-3000,-800)))
             self.rect = self.rect.inflate(-20,0) # changing hitboxes for spike2
         elif type == 'potion':
-            potion_image = pygame.image.load("potion.png")
+            potion_image = pygame.image.load("assets/potion.png")
             potion_image = pygame.transform.scale(potion_image, (100,100))
             self.image = potion_image # converting potion_image to the reference of self
             self.rect = self.image.get_rect(midbottom = (x,random.randint(-3000,-500)))
